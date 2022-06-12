@@ -5,12 +5,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(
-          child: Text(
-        'Home Page',
-        style: TextStyle(fontSize: 40),
-      )),
-    );
+    return Scaffold(
+        body: SafeArea(
+      child: Image.asset('assets/images/profpic.png'),
+    ));
   }
 }
