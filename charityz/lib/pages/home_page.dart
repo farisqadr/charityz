@@ -29,11 +29,11 @@ class HomePage extends StatelessWidget {
                     height: 100, width: 100),
                 const SizedBox(height: 20),
                 Text(
-                  'Sabrina Carpenter',
+                  'Neng Nabylla',
                   style: TextStyle(fontSize: 20, color: whiteColor),
                 ),
                 Text(
-                  'Travel Freelancer',
+                  'Yang waktu itu tea',
                   style: TextStyle(color: lightBlue, fontSize: 16),
                 ),
                 const SizedBox(
@@ -55,15 +55,15 @@ class HomePage extends StatelessWidget {
                       ),
                       ChatTile(
                         imageUrl: 'assets/images/friend1.png',
-                        name: 'Joshuer',
-                        text: 'Hello World!',
+                        name: 'Mang Erwin',
+                        text: 'Hello Surabaya!',
                         time: 'Now',
                         unread: true,
                       ),
                       ChatTile(
                         imageUrl: 'assets/images/friend2.png',
-                        name: 'Gabriela',
-                        text: 'I saw clearly!',
+                        name: 'Teh Irma',
+                        text: 'Jangan lupa nota nya ya..',
                         time: '2:30',
                         unread: false,
                       ),
