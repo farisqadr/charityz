@@ -45,7 +45,12 @@ class HomePage extends StatelessWidget {
                     const SizedBox(
                       height: 16,
                     ),
-                    ChatTile(),
+                    ChatTile(
+                      imageUrl: 'assets/images/friend1',
+                      name: 'Joshuer',
+                      text: 'Hello World!',
+                      time: 'Now',
+                    ),
                   ],
                 ),
               )
