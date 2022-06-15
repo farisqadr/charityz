@@ -2,12 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:charityz/theme.dart';
 
 class ChatTile extends StatelessWidget {
-  final imageUrl;
-  final name;
-  final text;
-  final time;
+  final String imageUrl;
+  final String name;
+  final String text;
+  final String time;
+  final bool unread;
 
-  ChatTile({this.imageUrl, this.name, this.text, this.time});
+  ChatTile(
+      {required this.imageUrl,
+      required this.name,
+      required this.text,
+      required this.time,
+      required this.unread});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +38,9 @@ class ChatTile extends StatelessWidget {
               ),
               Text(
                 text,
-                style: subTitleTextStyle.copyWith(color: blackColor),
+                style: unread
+                    ? subTitleTextStyle.copyWith(color: blackColor)
+                    : subTitleTextStyle,
               ),
             ],
           ),
